@@ -27,12 +27,27 @@ Enemy.prototype.render = function() {
 
 //Hero Class
 
-//CONSTRUCTIONER 
+//Constructor
 
-//MOVEMENT
-//X 
-//Y
+// Properties
+// x pos
+// y pos
+// sprite image
 
+// Methods
+    // Update position
+
+    // ....
+    // ...
+
+    // Render
+    //    Draw player sprite on current x and y coord position
+
+    //   Check collision here
+    //   Did player x and y collide with enemy
+
+    // Check Win here
+    //  Did Player x and y reach final title
 
 
 // Now instantiate your objects.
