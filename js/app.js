@@ -25,14 +25,24 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 
+const player = new Hero();
+
 //Hero Class
+class Hero {
+    constructor(){
+        this.x = 0;
+        this.y = 0;
+        this.sprite = 'imgaes/char-boy.png';
+    }
 
-//Constructor
 
-// Properties
-// x pos
-// y pos
-// sprite image
+    // Draw player sprite on current x and y coord position
+    render(){
+        ctx.drawImage(Resources.get(this.sprite), this,x, this.y);
+    }
+
+}
+
 
 // Methods
     // Update position
@@ -41,7 +51,7 @@ Enemy.prototype.render = function() {
     // ...
 
     // Render
-    //    Draw player sprite on current x and y coord position
+    // Draw player sprite on current x and y coord position
 
     //   Check collision here
     //   Did player x and y collide with enemy
